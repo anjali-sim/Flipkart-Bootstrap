@@ -1,302 +1,312 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flipkart Web Page</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="icon"
-        href="data:image/jpeg;base64,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">
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flipkart Web Page</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon"
+    href="data:image/jpeg;base64,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">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
+
 <body>
-    
-    <header>
+
+  <!-- For Header -->
+  <header>
     <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid head">
-          <a class="navbar-brand" href="#">
-            <div class="logo">
-                <img src="images/logo.png"
-                    height="20px" width="75px">
-                <p class="logo-colour">Explore <span class="plus-colour">Plus</span><img
-                        src="images/logo-plus.png"
-                        height="10px" width="10px"></p>
-            </div>
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <form class="d-flex" role="search">
-                        <input class="form-control" type="search" placeholder="Search for products, brands and more" aria-label="Search"> 
-                         
-                      </form>
-                </li>
-
-                <li class="nav-item">
-                    <button class="btn-1 bg-light rounded-0 login" type="submit">Login</button>
-                </li>
-              
-              <li class="nav-item dropdown">
-                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <span class="text">More&nbsp;</span><small><i class="fa-solid fa-angle-down arrow-1"></i></small>
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Sign Up</a></li>
-                  <li><a class="dropdown-item" href="#">Settings</a></li>
-                  <li><a class="dropdown-item" href="#">24x7 Customer Care</a></li>
-                  <li><a class="dropdown-item" href="#">Download App</a></li>
-                </ul>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="#"><img class="cart-logo" src="./images/cart-image.png" alt="Cart"><span class="text">Cart</span></a>
-              </li>
-              
-            </ul>
-            
+      <div class="container-fluid head">
+        <a class="navbar-brand" href="#">
+          <div class="logo">
+            <img src="images/logo.png" height="20px" width="75px">
+            <p class="logo-colour">Explore <span class="plus-colour">Plus</span><img src="images/logo-plus.png"
+                height="10px" width="10px"></p>
           </div>
-        </div>
-      </nav>
-    </header> 
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <div class="container">
-        <div class="row product-nav">
-            <div class="col category">
-                <a href=""><img src="./images/product-1.webp" alt=""> <br>Top Offers</a>
-            </div>
-            <div class="col category">
-                <a href=""><img src="./images/product-2.webp" alt=""> <br>Grocery</a>
-            </div>
-            <div class="col category">
-                <a href=""><img src="./images/product-3.webp" alt=""> <br>Mobiles</a>
-            </div>
-            <div class="col category">
-                <a href=""><img src="./images/product-4.png" alt=""></a>
-                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Fashion <i class="fa-solid fa-angle-down arrow"></i>
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Men's Wear</a></li>
-                      <li><a class="dropdown-item" href="#">Women's Wear</a></li>
-                    </ul>      
-            </div>
-            <div class="col category">
-                <a href=""><img src="./images/product-5.webp" alt=""></a>
-                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Tablets<i class="fa-solid fa-angle-down arrow"></i>
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Tablets</a></li>
-                    <li><a class="dropdown-item" href="#">Monitors</a></li>
-                    <li><a class="dropdown-item" href="#">Television</a></li>
-                </ul>
-            </div>
-            <div class="col category">
-                <a href=""><img src="./images/product-6.webp" alt=""></a>
-                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Home<i class="fa-solid fa-angle-down arrow"></i>
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Home Furnishing</a></li>
-                    <li><a class="dropdown-item" href="#">Tools Hardware</a></li>
-                    <li><a class="dropdown-item" href="#">Stylish Home Decor</a></li>
-                </ul>
-            </div>
-            <div class="col category">
-                <a href=""><img src="./images/product-7.webp" alt=""></a>
-                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Tvs<i class="fa-solid fa-angle-down arrow"></i>
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">TVs</a></li>
-                    <li><a class="dropdown-item" href="#">Washing Machine</a></li>
-                    <li><a class="dropdown-item" href="#">Refrigerators</a></li>
-                </ul>
-            </div>
-            <div class="col category">
-                <a href=""><img src="./images/product-8.webp" alt=""> <br>Travel</a>
-            </div>
-            <div class="col category">
-                <a href=""><img src="./images/product-9.webp" alt=""></a>
-                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    More<i class="fa-solid fa-angle-down arrow"></i>
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Beauty</a></li>
-                    <li><a class="dropdown-item" href="#">Toys</a></li>
-                </ul>
-            </div>
-            
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <form class="d-flex" role="search">
+                <input class="form-control" type="search" placeholder="Search for products, brands and more"
+                  aria-label="Search">
+                <button class="search-button rounded">
+                  <img src="./images/search (1).png" alt="Search-icon" width="20" height="20">
+                </button>
+              </form>
+            </li>
+            <li class="nav-item">
+              <button class="btn-1 bg-light rounded login" type="submit">Login</button>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="text">More&nbsp;</span><small><i class="fa-solid fa-angle-down arrow-1"></i></small>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Sign Up</a></li>
+                <li><a class="dropdown-item" href="#">Settings</a></li>
+                <li><a class="dropdown-item" href="#">24x7 Customer Care</a></li>
+                <li><a class="dropdown-item" href="#">Download App</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><img class="cart-logo" src="./images/cart-image.png" alt="Cart"><span
+                  class="text">Cart</span></a>
+            </li>
+          </ul>
         </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- For Product Navigation Menu -->
+  <div class="container">
+    <div class="row product-nav">
+      <div class="col category">
+        <a href=""><img src="./images/product-1.webp" alt=""> <br>Top Offers</a>
+      </div>
+      <div class="col category">
+        <a href=""><img src="./images/product-2.webp" alt=""> <br>Grocery</a>
+      </div>
+      <div class="col category">
+        <a href=""><img src="./images/product-3.webp" alt=""> <br>Mobiles</a>
+      </div>
+      <div class="col category">
+        <a href=""><img src="./images/product-4.png" alt=""></a>
+        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Fashion <i class="fa-solid fa-angle-down arrow"></i>
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Men's Wear</a></li>
+          <li><a class="dropdown-item" href="#">Women's Wear</a></li>
+        </ul>
+      </div>
+      <div class="col category">
+        <a href=""><img src="./images/product-5.webp" alt=""></a>
+        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Tablets<i class="fa-solid fa-angle-down arrow"></i>
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Tablets</a></li>
+          <li><a class="dropdown-item" href="#">Monitors</a></li>
+          <li><a class="dropdown-item" href="#">Television</a></li>
+        </ul>
+      </div>
+      <div class="col category">
+        <a href=""><img src="./images/product-6.webp" alt=""></a>
+        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Home<i class="fa-solid fa-angle-down arrow"></i>
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Home Furnishing</a></li>
+          <li><a class="dropdown-item" href="#">Tools Hardware</a></li>
+          <li><a class="dropdown-item" href="#">Stylish Home Decor</a></li>
+        </ul>
+      </div>
+      <div class="col category">
+        <a href=""><img src="./images/product-7.webp" alt=""></a>
+        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Tvs<i class="fa-solid fa-angle-down arrow"></i>
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">TVs</a></li>
+          <li><a class="dropdown-item" href="#">Washing Machine</a></li>
+          <li><a class="dropdown-item" href="#">Refrigerators</a></li>
+        </ul>
+      </div>
+      <div class="col category">
+        <a href=""><img src="./images/product-8.webp" alt=""> <br>Travel</a>
+      </div>
+      <div class="col category">
+        <a href=""><img src="./images/product-9.webp" alt=""></a>
+        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          More<i class="fa-solid fa-angle-down arrow"></i>
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Beauty</a></li>
+          <li><a class="dropdown-item" href="#">Toys</a></li>
+        </ul>
+      </div>
+
     </div>
-    <hr>
+  </div>
+  <hr>
 
-
-<section>
-<div class="main">
-<div class="container-fluid main">
-    <div class="row no-gutter">
-    <div class="container1 d-flex">
-        <div class="col-10 category-product">
-            <div class="part1 d-flex">
+  <!-- For First Category -->
+  <section>
+    <div class="main">
+      <div class="container-fluid main">
+        <div class="row no-gutter">
+          <div class="container1 d-flex">
+            <div class="col-10 category-product">
+              <div class="part1 d-flex">
                 <div class="left-heading-2 col-6">
-                    <h2>Deals of the Day</h2>&emsp;<img src="images/clock.png" alt="Clock">&emsp;<h4>22 : 07 : 36 Left</h4>
+                  <h2>Deals of the Day</h2>&emsp;<img src="images/clock.png" alt="Clock">&emsp;<h4>22 : 07 : 36 Left
+                  </h4>
                 </div>
                 <div class="col-6">
-                    <button type="button" class="btn btn-primary float-end view-btn">VIEW ALL</button>
+                  <button type="button" class="btn btn-primary float-end view-btn">VIEW ALL</button>
                 </div>
-            </div>
-            <hr>
-            <div class="part2 d-flex scroller">
+              </div>
+              <hr>
+              <div class="part2 d-flex scroller">
                 <div class="left-btn-scrollbtn ">
-                    <button id="left" onclick="scroll_right()" class="left_top_section_btn"> <i class="fa-solid fa-chevron-left"></i> </button>
-                </div>
-                <div class="col">
-                    <div class="card border-0" style="width: 9rem;">
-                        <img src="./images/list-1.png" class="card-img-top" alt="Watches">
-                        <div class="card-body">
-                          <h5 class="card-title">Casio, Fastrack, Sonata...</h5>
-                          <p class="card-text">Upto 80%+Extra 10% Off</p>
-                          <p class="card-text-1">Knockout Deals!</p>
-                        </div>
-                      </div>
-                </div>
-                <div class="col">
-                    <div class="card border-0" style="width: 9rem;">
-                        <img src="./images/list-2.png" class="card-img-top" alt="Home Temples">
-                        <div class="card-body">
-                          <h5 class="card-title">Home Temples & more</h5>
-                          <p class="card-text">Extra 10% Off</p>
-                          <p class="card-text-1">Space Saving furniture</p>
-                        </div>
-                      </div>
-                </div>
-                <div class="col">
-                    <div class="card border-0" style="width: 9rem;">
-                        <img src="./images/list-3.png" class="card-img-top" alt="Tablet Cases">
-                        <div class="card-body">
-                          <h5 class="card-title">Premium Tablet Cases</h5>
-                          <p class="card-text">Extra 10% Off</p>
-                          <p class="card-text-1">For All Top Models</p>
-                        </div>
-                      </div>
-                </div>
-                <div class="col">
-                    <div class="card border-0" style="width: 9rem;">
-                        <img src="./images/list-4.png" class="card-img-top" alt="Home Decor">
-                        <div class="card-body">
-                          <h5 class="card-title">Best of Home Decor</h5>
-                          <p class="card-text">From &#x20B9;79</p>
-                          <p class="card-text-1">Lowest Price Ever</p>
-                        </div>
-                      </div>
-                </div>
-                <div class="col">
-                    <div class="card border-0" style="width: 9rem;">
-                        <img src="./images/list-5.png" class="card-img-top" alt="Home Decor">
-                        <div class="card-body">
-                          <h5 class="card-title">Metronaut, Provogue &...</h5>
-                          <p class="card-text">From&#x20B9;249+Extra10%Off</p>
-                          <p class="card-text-1">Jackets, Dresses & More</p>
-                        </div>
-                      </div>
-                </div>
-                <div class="col">
-                    <div class="card border-0" style="width: 9rem;">
-                        <img src="./images/list-6.png" class="card-img-top" alt="LAVA A1500 Mobile">
-                        <div class="card-body">
-                          <h5 class="card-title">LAVA A1500</h5>
-                          <p class="card-text">Flat &#x20B9;830 off</p>
-                          <p class="card-text-1">Now &#x20B9;999</p>
-                        </div>
-                      </div>
-                </div>
-                <div class="col">
-                    <div class="card border-0" style="width: 9rem;">
-                        <img src="./images/list-7.png" class="card-img-top" alt="LAVA A1500 Mobile">
-                        <div class="card-body">
-                          <h5 class="card-title">LAVA A1500</h5>
-                          <p class="card-text">Flat &#x20B9;830 off</p>
-                          <p class="card-text-1">Now &#x20B9;999</p>
-                        </div>
-                      </div>
-                </div>
-                <div class="col">
-                    <div class="card border-0" style="width: 9rem;">
-                        <img src="./images/list-1.png" class="card-img-top" alt="Watches">
-                        <div class="card-body">
-                          <h5 class="card-title">Casio, Fastrack, Sonata...</h5>
-                          <p class="card-text">Upto 80%+Extra 10% Off</p>
-                          <p class="card-text-1">Knockout Deals!</p>
-                        </div>
-                      </div>
+                  <button id="left" onclick="scroll_right()" class="left_top_section_btn"> <i
+                      class="fa-solid fa-chevron-left"></i> </button>
                 </div>
                 <div class="col">
                   <div class="card border-0" style="width: 9rem;">
-                      <img src="./images/list-2.png" class="card-img-top" alt="Home Temples">
-                      <div class="card-body">
-                        <h5 class="card-title">Home Temples & more</h5>
-                        <p class="card-text">Extra 10% Off</p>
-                        <p class="card-text-1">Space Saving furniture</p>
-                      </div>
+                    <img src="./images/list-1.png" class="card-img-top" alt="Watches">
+                    <div class="card-body">
+                      <h5 class="card-title">Casio, Fastrack, Sonata...</h5>
+                      <p class="card-text">Upto 80%+Extra 10% Off</p>
+                      <p class="card-text-1">Knockout Deals!</p>
                     </div>
-              </div>
-                
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card border-0" style="width: 9rem;">
+                    <img src="./images/list-2.png" class="card-img-top" alt="Home Temples">
+                    <div class="card-body">
+                      <h5 class="card-title">Home Temples & more</h5>
+                      <p class="card-text">Extra 10% Off</p>
+                      <p class="card-text-1">Space Saving furniture</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card border-0" style="width: 9rem;">
+                    <img src="./images/list-3.png" class="card-img-top" alt="Tablet Cases">
+                    <div class="card-body">
+                      <h5 class="card-title">Premium Tablet Cases</h5>
+                      <p class="card-text">Extra 10% Off</p>
+                      <p class="card-text-1">For All Top Models</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card border-0" style="width: 9rem;">
+                    <img src="./images/list-4.png" class="card-img-top" alt="Home Decor">
+                    <div class="card-body">
+                      <h5 class="card-title">Best of Home Decor</h5>
+                      <p class="card-text">From &#x20B9;79</p>
+                      <p class="card-text-1">Lowest Price Ever</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card border-0" style="width: 9rem;">
+                    <img src="./images/list-5.png" class="card-img-top" alt="Home Decor">
+                    <div class="card-body">
+                      <h5 class="card-title">Metronaut, Provogue &...</h5>
+                      <p class="card-text">From&#x20B9;249+Extra10%Off</p>
+                      <p class="card-text-1">Jackets, Dresses & More</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card border-0" style="width: 9rem;">
+                    <img src="./images/list-6.png" class="card-img-top" alt="LAVA A1500 Mobile">
+                    <div class="card-body">
+                      <h5 class="card-title">LAVA A1500</h5>
+                      <p class="card-text">Flat &#x20B9;830 off</p>
+                      <p class="card-text-1">Now &#x20B9;999</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card border-0" style="width: 9rem;">
+                    <img src="./images/list-7.png" class="card-img-top" alt="LAVA A1500 Mobile">
+                    <div class="card-body">
+                      <h5 class="card-title">LAVA A1500</h5>
+                      <p class="card-text">Flat &#x20B9;830 off</p>
+                      <p class="card-text-1">Now &#x20B9;999</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card border-0" style="width: 9rem;">
+                    <img src="./images/list-1.png" class="card-img-top" alt="Watches">
+                    <div class="card-body">
+                      <h5 class="card-title">Casio, Fastrack, Sonata...</h5>
+                      <p class="card-text">Upto 80%+Extra 10% Off</p>
+                      <p class="card-text-1">Knockout Deals!</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card border-0" style="width: 9rem;">
+                    <img src="./images/list-2.png" class="card-img-top" alt="Home Temples">
+                    <div class="card-body">
+                      <h5 class="card-title">Home Temples & more</h5>
+                      <p class="card-text">Extra 10% Off</p>
+                      <p class="card-text-1">Space Saving furniture</p>
+                    </div>
+                  </div>
+                </div>
 
                 <div class="right-btn scrollbtn">
-                    <button id="right" onclick="scroll_left()" class="right_top_section_btn"> <i class="fa-solid fa-chevron-right"></i> </button>
+                  <button id="right" onclick="scroll_left()" class="right_top_section_btn"> <i
+                      class="fa-solid fa-chevron-right"></i> </button>
                 </div>
+              </div>
             </div>
+            <div class="adv col-2">
+              <img src="images/advertise.png" height="600px" width="250px" alt="">
+            </div>
+          </div>
         </div>
-        <div class="adv col-2">
-            <img  src="images/advertise.png" height="600px" width="250px" alt="">
-        </div>
-    </div>
-    </div>  
-    
-  </div> 
+      </div>
 
-<div class="main-2">
-      <div class="container-fluid main-2">
-        <div class="row no-gutter">
-        <div class="container1 d-flex">
-            <div class="col category-product-2">
+      <!-- For Second Category -->
+      <div class="main-2">
+        <div class="container-fluid main-2">
+          <div class="row no-gutter">
+            <div class="container1 d-flex">
+              <div class="col category-product-2">
                 <div class="part1 d-flex">
                   <div class="col heading">
                     <h2>Books and music Instruments</h2>
                     <p class="heading-1">Shop Now!</p>
                   </div>
-                    <div class="col-6">
-                        <button type="button" class="btn btn-primary float-end view-btn">VIEW ALL</button>
-                    </div>
+                  <div class="col-6">
+                    <button type="button" class="btn btn-primary float-end view-btn">VIEW ALL</button>
+                  </div>
                 </div>
                 <hr>
                 <div class="part2 d-flex scroller">
-                    
+
                   <div class="col products-2">
                     <div class="card border-0 ">
-                        <img src="./images/harmonium.png" class="card-img-top" alt="Harmonium">
-                        <div class="card-body">
-                          <h5 class="card-title">Harmoniums</h5>
-                          <p class="card-text">Up to 60% Off</p>
-                          <p class="card-text-1">Shop Now!</p>
-                        </div>
+                      <img src="./images/harmonium.png" class="card-img-top" alt="Harmonium">
+                      <div class="card-body">
+                        <h5 class="card-title">Harmoniums</h5>
+                        <p class="card-text">Up to 60% Off</p>
+                        <p class="card-text-1">Shop Now!</p>
                       </div>
-                </div>
-                <div class="col">
-                  <div class="card border-0">
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card border-0">
                       <img src="./images/flute.png" class="card-img-top" alt="Harmonium">
                       <div class="card-body">
                         <h5 class="card-title">Flutes</h5>
@@ -304,9 +314,9 @@
                         <p class="card-text-1">Shop Now!</p>
                       </div>
                     </div>
-              </div>
-              <div class="col">
-                  <div class="card border-0">
+                  </div>
+                  <div class="col">
+                    <div class="card border-0">
                       <img src="./images/guitar-1.png" class="card-img-top" alt="Harmonium">
                       <div class="card-body">
                         <h5 class="card-title">Acoustic Guitars</h5>
@@ -314,9 +324,9 @@
                         <p class="card-text-1">Juarez, Revel..</p>
                       </div>
                     </div>
-              </div>
-              <div class="col">
-                  <div class="card border-0">
+                  </div>
+                  <div class="col">
+                    <div class="card border-0">
                       <img src="./images/musical-accessories.png" class="card-img-top" alt="Harmonium">
                       <div class="card-body">
                         <h5 class="card-title">Musical Accessories</h5>
@@ -324,9 +334,9 @@
                         <p class="card-text-1">Shop Now!</p>
                       </div>
                     </div>
-              </div>
-              <div class="col">
-                  <div class="card border-0">
+                  </div>
+                  <div class="col">
+                    <div class="card border-0">
                       <img src="./images/microphone-accessories.png" class="card-img-top" alt="Harmonium">
                       <div class="card-body">
                         <h5 class="card-title">Microphone Accessories</h5>
@@ -334,9 +344,9 @@
                         <p class="card-text-1">Shop Now!</p>
                       </div>
                     </div>
-              </div>
-              <div class="col">
-                  <div class="card border-0">
+                  </div>
+                  <div class="col">
+                    <div class="card border-0">
                       <img src="./images/guitar-2.png" class="card-img-top" alt="Harmonium">
                       <div class="card-body">
                         <h5 class="card-title">Acoustic Guitars</h5>
@@ -344,20 +354,19 @@
                         <p class="card-text-1">By Revel</p>
                       </div>
                     </div>
-              </div>
-              
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-        </div>  
-        
-      </div> 
+      </div>
     </div>
+  </section>
 
-</div>
-</section>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
 
 </body>
 </html>
